@@ -47,13 +47,13 @@
                 </a>
               </h6>
               <li class="nav-item">
-                <a class="nav-link" href="Telas/TelaPedido.html">
+                <a class="nav-link" href="TelaPedido.html">
                   <span data-feather="shopping-cart"></span>
                   Novo Pedido
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="Telas/TelaRelatorioInv.html">
+                <a class="nav-link" href="TelaRelatorioInv.html">
                   <span data-feather="file-text"></span>
                   Relatorio de Inventario
                 </a>
@@ -68,13 +68,13 @@
             </h6>
             <ul class="nav flex-column mb-2">
               <li class="nav-item">
-                <a class="nav-link" href="Telas/TelaCadastroEquip.html">
+                <a class="nav-link" href="TelaCadastroEquip.html">
                   <span data-feather="file"></span>
                   Cadastrar Equipamento
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="Telas/TelaRelatorioInv.html">
+                <a class="nav-link" href="TelaRelatorioInv.html">
                   <span data-feather="file-text"></span>
                   Relatorio de Inventario
                 </a>
@@ -86,7 +86,7 @@
                 </a>
               </h6>
               <li class="nav-item">
-                <a class="nav-link" href="Telas/TelaRelatorioTroca.html">
+                <a class="nav-link" href="TelaRelatorioTroca.html">
                   <span data-feather="file-text"></span>
                   Relatorio de Troca
                 </a>
@@ -97,14 +97,37 @@
 
         <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
           <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-            <h1 class="h2">Dashboard</h1>
+            <h1 class="h2">Cadastro Equipamento</h1>
             <div class="btn-toolbar mb-2 mb-md-0">
               <div class="btn-group mr-2">
               </div>
             </div>
           </div>
           <div>
-            <h1>LOCAL DINAMICO</h1>
+            <form>
+              <div class="form-group">
+                <label for="fieldFabricante">Fabricante</label>
+                <input type="text" class="form-control" id="fieldFabricante" placeholder="">
+              </div>
+              <div class="form-group">
+                <label for="fieldModelo">Modelo</label>
+                <input type="text" class="form-control" id="fieldModelo" placeholder="">
+              </div>
+              <div class="form-group">
+                <label for="fieldCodigo">Codigo Produto</label>
+                <input type="text" class="form-control" id="fieldCodigo" placeholder="">
+              </div>
+              <div class="form-group">
+                <label for="fieldVeiculo">Veiculo</label>
+                <input type="text" class="form-control" id="fieldVeiculo" placeholder="">
+              </div>
+              <div class="form-group">
+                <label for="fieldGarantia">Garantia</label>
+                <input type="text" class="form-control" id="fieldGarantia" placeholder="">
+              </div>
+              
+              <button type="submit" class="btn btn-default">Cadastrar</button>
+            </form>
           </div>
         </main>
       </div>
