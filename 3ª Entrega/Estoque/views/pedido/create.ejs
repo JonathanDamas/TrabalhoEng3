@@ -1,0 +1,39 @@
+<% include ../partials/header.ejs %>
+    <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+            <h1 class="h2">Novo Pedido</h1>
+            <div class="btn-toolbar mb-2 mb-md-0">
+              <div class="btn-group mr-2"></div>
+            </div>
+        </div>
+        <div> 
+            <form method="post">
+                <div class="form-group">
+                    <label for="nameField">Nome</label>
+                    <input type="text" class="form-control" id="nameField" name="nome">
+                </div>
+                <div class="form-group">
+                    <label for="endField">Endereço</label>
+                    <input type="text" class="form-control" id="endField" name="endereço">
+                </div>
+                <div class="form-group col-xs-2">
+                    <label for="rgField">RG :</label>
+                    <input type="text" class="form-control" id="rgField" name="rg">
+                </div>
+                <div class="form-group">
+                    <label for="cpfField">CPF : </label>
+                    <input type="text" class="form-control" id="cpfField" name="cpf">
+                </div>
+                <div class="form-group">
+                    <label for="telField">Telefone : </label>
+                    <input type="text" class="form-control" id="telField" name="telefone">
+                </div>
+                <div class="form-group">
+                    <label for="prodField">Produto</label>
+                    <input type="text" class="form-control" id="prodField" name="produto">
+                </div>
+                <button type="submit" class="btn btn-default">Cadastrar</button>
+            </form>
+        </div>
+    </main>
+<% include ../partials/footer.ejs %>

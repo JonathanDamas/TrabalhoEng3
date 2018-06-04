@@ -1,0 +1,38 @@
+<% include ../partials/header.ejs %>
+
+    <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+            <h1 class="h2">Materiais</h1>
+            <div class="btn-toolbar mb-2 mb-md-0">
+                <div class="btn-group mr-2"></div>
+            </div>
+        </div>
+        <h2>Lista de Equipamentos</h2>
+        <div class="table-responsive">
+            <table class="table table-striped table-sm" id="tableEquip">
+                <tr>
+                    <th>Codigo</th>
+                    <th>Fabricante</th>
+                    <th>Modelo</th>
+                    <th>Veiculo</th>
+                    <th>Quantidade</th>
+                    <th>#</th>
+                </tr>
+                <% relatorio.map( relatorios => { %>
+                <tr>
+                    <td><%= relatorios.id %></td>
+                    <td><%= relatorios.fabricante %></td>
+                    <td><%= relatorios.modelo %></td>
+                    <td><%= relatorios.veiculo %></td>
+                    <td><%= relatorios.quantidade %></td>
+                    <td><div class="btn-group btn-group-xs" role="group" aria-label="...">
+                            <a type="button" class="btn">Editar</a>
+                            <a type="button" class="btn" href="/relatorio/delete/<%= relatorios.id %>" onclick="return confirm('Deseja realmente excluir?')">Excluir</a>
+                          </div>
+                    </td>
+                </tr>
+                <% }) %>
+            </table>
+        </div>
+    </main>
+<% include ../partials/footer.ejs %>
