@@ -26,7 +26,21 @@ const findById = (connection, id) =>{
     })
 }
 
+const update = (connection,id, data) =>{
+    return new Promise((resolve, reject) =>{
+        connection.query(`update equipamentos set fabricante='${data.fabricante}', modelo='${data.modelo}', veiculo='${data.veiculo}', quantidade='${data.quantidade}' where id=${id}`, (err)=>{
+            if(err){
+                reject(err)
+            }else{
+                resolve()
+            }
+        })
+    })
+}
+
+
 module.exports = {
     create,
-    findById
+    findById,
+    update
 }

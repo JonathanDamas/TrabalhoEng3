@@ -15,7 +15,7 @@ const updateForm = async(connection,req, res) =>{
 }
 
 const updateProcess = async(connection, req, res) =>{
-    await equipamentos.create(connection, req.body)
+    await equipamentos.update(connection, req.params.id, req.body)
     res.redirect('/equipamento')
 }
 

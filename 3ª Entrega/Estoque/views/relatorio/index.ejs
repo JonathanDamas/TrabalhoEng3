@@ -26,8 +26,12 @@
                     <td><%= relatorios.veiculo %></td>
                     <td><%= relatorios.quantidade %></td>
                     <td><div class="btn-group btn-group-xs" role="group" aria-label="...">
-                            <a type="button" class="btn" href="../equipamento/update/<%= relatorios.id %>">Editar</a>
-                            <a type="button" class="btn" href="/relatorio/delete/<%= relatorios.id %>" onclick="return confirm('Deseja realmente excluir?')">Excluir</a>
+                            <a type="button" class="btn" href="../equipamento/update/<%= relatorios.id %>">
+                                <span data-feather="edit">Salvar</span>
+                            </a>
+                            <a type="button" class="btn" href="/relatorio/delete/<%= relatorios.id %>" onclick="return confirm('Deseja realmente excluir?')">
+                                <span data-feather="trash">Excluir</span>
+                            </a>
                           </div>
                     </td>
                 </tr>
